@@ -16,6 +16,21 @@ void swap(int *p, int *y) {
     *y = temp;
 }
 
+void reverse(int *arr, int n) {
+    int *end = arr + (n-1);
+    int *start = arr;
+
+    for (; start < end; ) {
+        int temp = *start;
+        *start = *end;
+        *end = temp;
+        
+        start++;
+        end--;
+     }
+}
+
+
 int main() {
     int x = 10;
     int y = 5;
