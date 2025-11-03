@@ -22,5 +22,6 @@ int main(int argc, char *argv[]) {
         printf("Second Array: Index [%d] Number [%d] \n", i, array_s[i]);
     }
 
+    free(array_d);
     return EXIT_SUCCESS;
 }
