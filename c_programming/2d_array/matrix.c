@@ -26,4 +26,5 @@ int main(void)
 
     printf("print_matrix_ptr:\n");
     print_matrix_ptr(/* TODO */);
+    return 0;
 }
