@@ -10,12 +10,19 @@ struct element {
 struct element *push_back(struct element *head, int val)
 {
     struct element *new;
-
-    // allocate storage for new list element
-
+    new = malloc(sizeof(struct element));
+    new->val=val;
+    new->next =NULL;
     // set 'val' and 'next'
+    if (head==NULL) {
+        return new;
+    }
+    struct element* temp = head;
+    while (temp->next != NULL) {
+        temp = temp->next; 
+    }
+    temp->next=new;
 
-    // check for valid input of 'head' (empty list)
 
     // set 'head' to last element
 
